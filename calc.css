@@ -1,111 +1,111 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background: #136a8a;  
-    background: -webkit-linear-gradient(to top, #267871, #136a8a);  
-    background: linear-gradient(to top, #267871, #136a8a); 
-    background-repeat: no-repeat;   
-    margin: 0; 
-    height: 100vh;
+body {
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #136a8a;
+  background: -webkit-linear-gradient(to top, #267871, #136a8a);
+  background: linear-gradient(to top, #267871, #136a8a);
+  background-repeat: no-repeat;
+  margin: 0;
+  height: 100vh;
 }
-.container{
-    width: 100%;   
-    display: grid;
-    grid-template-columns: 1fr 98px;
-    grid-template-areas: "title title"
-                         "result result"
-                         "inputs options";
-    justify-content: center;
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 98px;
+  grid-template-areas:
+    "title title"
+    "result result"
+    "inputs options";
+  justify-content: center;
 }
 .result,
 .container-inputs,
-.container-options{
-    width: 100%;
-    padding:10px ;
+.container-options {
+  width: 100%;
+  padding: 10px;
 }
-.title{
-    grid-area: title;
+.title {
+  grid-area: title;
 }
-.result{
-    grid-area: result;
+.result {
+  grid-area: result;
 }
-.container-inputs{
-    grid-area: inputs;
+.container-inputs {
+  grid-area: inputs;
 }
-.container-options{
-    grid-area: options;
+.container-options {
+  grid-area: options;
 }
-.container-inputs{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    justify-content: center;
-    gap: 5px;
+.container-inputs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 5px;
 }
-.container-options{
-    display: grid;
-    grid-template-columns: 90px;
-    justify-content: center;
-    gap: 5px;
+.container-options {
+  display: grid;
+  grid-template-columns: 90px;
+  justify-content: center;
+  gap: 5px;
 }
-.title{
-    margin: 0;
-    text-align: center;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    color: #fff;
-
+.title {
+  margin: 0;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
 }
-.result input{
-    width: 100%;
-    font-size: 1rem;
-    padding: 10px 20px ;
-    border-radius: 8px;
-    border: 1px solid #dbdbe2;
-    text-align: right;
+.result input {
+  width: 100%;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #dbdbe2;
+  text-align: right;
 }
-.result input:focus-visible{
-    outline-color: #4caf50;
+.result input:focus-visible {
+  outline-color: #4caf50;
 }
 .btn,
 .clear,
 .option,
-.obtResp{
-    padding: 18px 25px;    
-    font-size: 1.2rem;
-    border: 1px solid #000;
-    border-radius: 8px; 
-    transition: border 0.2s;
+.obtResp {
+  padding: 18px 25px;
+  font-size: 1.2rem;
+  border: 1px solid #000;
+  border-radius: 8px;
+  transition: border 0.2s;
 }
 .clear,
-.btn{
-    background: #f6b93b;
+.btn {
+  background: #f6b93b;
 }
 .btn:active,
 .option:active,
 .clear:active,
-.obtResp:active{
-    border: 1px solid #fff ;
+.obtResp:active {
+  border: 1px solid #fff;
 }
 .option,
-.obtResp{
-    background: #ff7979;
-    color: #fff;
+.obtResp {
+  background: #ff7979;
+  color: #fff;
 }
-.footer{
-    font-size: 1.2rem;
-    text-align: left;
-    padding-left: 8px;
+.footer {
+  font-size: 1.2rem;
+  text-align: left;
+  padding-left: 8px;
 }
 @media screen and (min-width: 768px) {
-    .body{
-        align-items: baseline;
-    }
-    .container{
-        margin-top: 60px;
-    }
+  .body {
+    align-items: baseline;
+  }
+  .container {
+    margin-top: 60px;
+  }
 }
